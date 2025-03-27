@@ -41,9 +41,11 @@ BODY {
 				user = e.detail;
 						console.log( "Inside Prechat API!!  3" );
 				});
-				window.addEventListener("onEmbeddedMessagingReady", () => {
+				window.addEventListener("onEmbeddedMessagingReady", () => {            
 				console.log( "Inside Prechat API!!  2" );
-				
+				embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields( { "Quel_est_votre_statut" : user.Quel_est_votre_statut2 } );
+			});
+
 
 			embeddedservice_bootstrap.init(
 				'00D7Q00000CIPVD',
